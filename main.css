@@ -1,5 +1,5 @@
 body{
-font-family: 'Arial', sans-serif;
+font-family: 'Arial Narrow', sans-serif;
 background-color: #f3f3f3;
 }
 
@@ -19,6 +19,7 @@ background-color: #18696f;
 text-transform: uppercase;
  text-align: center;
  line-height: 50px;
+
  }
 
  header h2{
@@ -26,6 +27,11 @@ font-variant: small-caps;
  text-align: center;
  color: #F0AF0E;
  }
+ header h3{
+    font-variant: small-caps;
+     text-align: center;
+     color: #F0AF0E;
+     }
 
 .main_menu{
 padding:5px 0 5px 0;
@@ -55,7 +61,7 @@ color: #18696f;
 }
 
 p {
-font-family:"Comic Sans MS", cursive, sans-serif;
+font-family: 'Didot';
 line-height: 2.5;
 }
 
