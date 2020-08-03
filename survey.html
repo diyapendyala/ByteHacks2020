@@ -12,7 +12,7 @@
         
 #main {
     width: 80%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'American Typewriter', sans-serif;
     max-width: 950px;
     border: 1px gray solid;       
     margin: auto;
@@ -28,10 +28,17 @@
     height: 250px;
     background-color: #F0AF0E;
         }
+#button{
+    font-size: 20px;
+    background-color: #921D66;
+    color: white
+    
+}
 </style>       
 <div id="main"><!-- open main div -->
     <div id="header"><!-- open header div -->
     <h1 style="text-align:center;"><BR><BR>Do you have the plague?</h1>
+    <h2 style="text-align:center;">Take the survey to find out!</h2>
     </div><!-- close header div -->
    
     <form id="form1">
@@ -45,8 +52,8 @@
         <input type="radio" name="fever" value="0" >No<BR/>
         
         <h2>Is your throat area swollen?</h2>
-        <input type="radio" name="throat" value="0" />No<BR/>
         <input type="radio" name="throat" value="25" />Yes<BR/>
+        <input type="radio" name="throat" value="0" />No<BR/>
 
         <h2>Are you experiencing chills to any degree?</h2>
         <input type="radio" name="chills" value="25" />Yes<BR/>
@@ -69,10 +76,16 @@
         <input type="radio" name="boils" value="0" />No<BR/>
 
         
-    <button type="submit" value="Submit">Submit</button>
+    <button style= "position:relative; right:-400px;" id="button" type="submit" value="Submit">Submit</button>
     </fieldset>
     </form>
-    <p><span id="precautions">__</span></p>
+    <p><span id="precautions"></span></p>
+    <div style="text-align:right;">
+        <a href="safetyprecautions.html">Safety Precautions</a> 
+    </div>   
+    <div style="text-align:right;">
+        <a href="index.html">Home Page</a>
+    </div>
     </div><!-- close main div -->
 
     <script>
@@ -90,7 +103,7 @@
                result = cough + fever + throat + chills + headache + breath + vomiting + boils 
                
     if (result < 100) {result2 = "You do not have enough symptoms to diagnose you with the plague. Please take care. If your symptoms get worse or you are experiencing new symptoms, please retake the quiz and follow our safety guidlines."};
-    if (result >= 100) {result2 = "You are having enough symptoms to diagnose you with the plague! Please isolate yourself from your family and friends so they don't catch it. Make sure you follow all of our safety precautions, and contact your local doctor. Also, keep a cold cloth on your forehead and try your best to keep the fever at bay. We hope you get well soon!"
+    if (result >= 100) {result2 = "You have enough symptoms to diagnose you with the plague! Please isolate yourself from your family and friends so they don't catch it. Make sure you follow all of our safety precautions, and contact your local doctor. Also, keep a cold cloth on your forehead and try your best to keep the fever at bay. We hope you get well soon!"
                                   };
     document.getElementById("precautions").innerHTML = result2; 
    
@@ -99,7 +112,7 @@
         } //this ends the submit function
         
     </script>
-        
-        
+    
+
 </body>
 </html>

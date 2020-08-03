@@ -11,12 +11,17 @@
 <body>
 <div id="wrapper">
     <header>
-       <h1>WELCOME</h1> 
+       <h1>WELCOME!</h1> 
        <h2>black death info page</h2>
        <h3>By: The Binary Bytes Team</h3>
+       <BR>
+       <BR>
     </header>
 
     <nav>
+        <BR>
+        <BR>
+        <BR>
          <ul class="main_menu">
         <li><a href="index.html">home</a></li>
         <li><a href="survey.html">do you have the plague?</a></li>
@@ -29,12 +34,12 @@
     <p>
     <BR>
     </p>
-    <p style="text-align:left;">&nbsp The plague is a serious illness and is not to be taken lightly. <BR>
+    <p id="paragraph" style="text-align:left;">&nbsp The plague is a serious illness and is not to be taken lightly. <BR>
     &nbsp Symptoms can range from a fever and a cough to severe pus-filled <BR>
-    &nbsp boils and a quick death. Many lives are mercilessly lost through the black <BR>
+    &nbsp boils and a quick death.  Many lives are mercilessly lost through the black <BR>
     &nbsp death, and we want to slow this down. If you feel that you have symptoms <BR>
     &nbsp related to this sickness, or you just aren’t feeling well, please take <BR>
-    &nbsp our survey under the tab, “Do you have the plague?”,and take a look under <BR>
+    &nbsp our survey under the tab, “Do you have the plague?” Also, take a look under <BR>
     &nbsp the tab, “Safety Precautions to take” to prevent yourself and others <BR>
     &nbsp from catching this horrid sickness. Thank you, and stay safe! </h3></p>
 
@@ -43,7 +48,17 @@
             <source src="My Movie.mp4" type="video/mp4">
         </video>
     </div>
-   
+    <button id="button1" style="position:absolute; bottom: -50px;">Click here if you tested positive for the Plague on our survey!</button>
+    <p style="position:absolute; bottom:-107px;" id="number">0</p>
+    <div style="position:absolute; left:35px; bottom:-80px;"> people have tested positive for the plague!</div>
+    <script>
+        let button = document.querySelector('#button1');
+        button.onclick = function updateNumber() {
+            let number = document.querySelector('#number');
+            number.innerHTML = parseInt(number.innerHTML) + 1;
+        }
+
+    </script>
 </body>
 
 </html>

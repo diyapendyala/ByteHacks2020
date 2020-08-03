@@ -19,6 +19,7 @@ background-color: #18696f;
 text-transform: uppercase;
  text-align: center;
  line-height: 50px;
+ font-size: 32pt
 
  }
 
@@ -26,11 +27,13 @@ text-transform: uppercase;
 font-variant: small-caps;
  text-align: center;
  color: #F0AF0E;
+ font-size: 20pt;
  }
  header h3{
     font-variant: small-caps;
      text-align: center;
      color: #F0AF0E;
+     font-size: 20pt;
      }
 
 .main_menu{
@@ -65,3 +68,12 @@ font-family: 'Didot';
 line-height: 2.5;
 }
 
+div {
+   font-family: 'Didot';
+}
+
+#button1{
+   font-size: 20px;
+   background-color: #921D66;
+   color:white
+}
