@@ -19,7 +19,8 @@ background-color: #18696f;
 text-transform: uppercase;
  text-align: center;
  line-height: 50px;
- font-size: 32pt
+ font-size: 32pt;
+ color: white
 
  }
 
@@ -40,7 +41,7 @@ font-variant: small-caps;
  padding: 5px 0 5px 0;
  text-align: center;
  line-height: 32px;
- background-color: #18696f;
+ background-color: #f3f3f3;
 }
 
 ul.main_menu{
